@@ -1,20 +1,96 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/home.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+main()
+{
+  runApp(MaterialApp(
+    home: Scaffold(
+      body:  Column
+        (
+        children: [
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.grey,
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+            ),
+          ),
+          Expanded(
+              flex: 1,
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen()
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      color: Colors.grey,
 
-    );
-  }
+                    ),
+
+
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      color: Colors.red,
+
+
+                    ),
+
+
+                  ),
+                  Expanded(
+                      flex: 1,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              color: Colors.green,
+
+
+
+                            ),
+
+
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              color: Colors.blue,
+
+
+                            ),
+
+
+                          )
+                        ],
+                      )
+
+
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      color: Colors.grey,
+
+                    ),
+
+
+                  ),
+
+                ],
+              )
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.grey,
+            ),
+          ),
+        ],
+      ),
+
+
+    ),
+  ));
 }
